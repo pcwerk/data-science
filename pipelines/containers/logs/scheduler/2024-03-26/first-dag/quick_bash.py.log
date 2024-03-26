@@ -1,0 +1,267 @@
+[2024-03-26T19:43:00.471+0000] {processor.py:161} INFO - Started process (PID=1700) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:00.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:43:00.473+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:43:00.473+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:00.476+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:43:00.475+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:43:00.476+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:00.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.024 seconds
+[2024-03-26T19:43:30.743+0000] {processor.py:161} INFO - Started process (PID=1756) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:30.744+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:43:30.745+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:43:30.745+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:30.748+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:43:30.747+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:43:30.748+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:43:30.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.022 seconds
+[2024-03-26T19:44:00.894+0000] {processor.py:161} INFO - Started process (PID=1811) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:00.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:44:00.896+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:44:00.896+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:00.899+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:44:00.898+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:44:00.899+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:00.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.023 seconds
+[2024-03-26T19:44:31.142+0000] {processor.py:161} INFO - Started process (PID=1867) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:31.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:44:31.144+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:44:31.144+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:31.147+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:44:31.146+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:44:31.147+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:44:31.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.024 seconds
+[2024-03-26T19:45:00.320+0000] {processor.py:161} INFO - Started process (PID=1924) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:00.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:00.322+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:00.322+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:00.325+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:00.324+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:00.325+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:00.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.027 seconds
+[2024-03-26T19:45:04.764+0000] {processor.py:161} INFO - Started process (PID=1927) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:04.765+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:04.766+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:04.766+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:04.768+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:04.768+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:04.769+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:04.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.022 seconds
+[2024-03-26T19:45:19.956+0000] {processor.py:161} INFO - Started process (PID=1981) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:19.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:19.958+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:19.958+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:19.960+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:19.960+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:19.961+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:19.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.021 seconds
+[2024-03-26T19:45:25.990+0000] {processor.py:161} INFO - Started process (PID=1982) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:25.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:25.993+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:25.992+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:25.995+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:25.995+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:25.995+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:26.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.023 seconds
+[2024-03-26T19:45:34.543+0000] {processor.py:161} INFO - Started process (PID=1985) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:34.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:34.545+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:34.545+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:34.547+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:34.547+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:34.548+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:34.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.025 seconds
+[2024-03-26T19:45:35.549+0000] {processor.py:161} INFO - Started process (PID=1986) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:35.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:45:35.552+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:35.551+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:35.554+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:45:35.553+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:45:35.554+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:45:35.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.022 seconds
+[2024-03-26T19:46:05.709+0000] {processor.py:161} INFO - Started process (PID=2042) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:05.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:46:05.711+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:05.711+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:05.714+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:05.713+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:46:05.714+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:05.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.028 seconds
+[2024-03-26T19:46:36.068+0000] {processor.py:161} INFO - Started process (PID=2096) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:46:36.071+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:36.070+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.073+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:36.072+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:46:36.074+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.026 seconds
+[2024-03-26T19:46:36.519+0000] {processor.py:161} INFO - Started process (PID=2099) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:46:36.521+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:36.520+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.523+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:46:36.522+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/first-dag/quick_bash.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/first-dag/quick_bash.py", line 76
+    [docs]    t1 = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-03-26T19:46:36.523+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:46:36.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.022 seconds
+[2024-03-26T19:47:05.915+0000] {processor.py:161} INFO - Started process (PID=2153) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:05.915+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:47:05.917+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:05.916+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:05.922+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:06.020+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.020+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:bash_demo
+[2024-03-26T19:47:06.030+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.029+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:bash_demo
+[2024-03-26T19:47:06.035+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.034+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:bash_demo
+[2024-03-26T19:47:06.035+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.035+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:47:06.046+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.045+0000] {dag.py:3069} INFO - Creating ORM DAG for bash_demo
+[2024-03-26T19:47:06.056+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.056+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-25 00:00:00+00:00, run_after=2024-03-26 00:00:00+00:00
+[2024-03-26T19:47:06.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.167 seconds
+[2024-03-26T19:47:06.927+0000] {processor.py:161} INFO - Started process (PID=2154) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:06.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:47:06.930+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.929+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:06.937+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:06.950+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.949+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:47:06.978+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:06.978+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-25 00:00:00+00:00, run_after=2024-03-26 00:00:00+00:00
+[2024-03-26T19:47:07.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.078 seconds
+[2024-03-26T19:47:37.280+0000] {processor.py:161} INFO - Started process (PID=2222) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:37.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:47:37.282+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:37.282+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:37.289+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:47:37.306+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:37.306+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:47:37.326+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:47:37.326+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-26 00:00:00+00:00, run_after=2024-03-27 00:00:00+00:00
+[2024-03-26T19:47:37.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.064 seconds
+[2024-03-26T19:48:07.678+0000] {processor.py:161} INFO - Started process (PID=2278) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:07.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:48:07.681+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:07.681+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:07.686+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:07.705+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:07.705+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:48:07.726+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:07.726+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-26 00:00:00+00:00, run_after=2024-03-27 00:00:00+00:00
+[2024-03-26T19:48:07.742+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.066 seconds
+[2024-03-26T19:48:37.925+0000] {processor.py:161} INFO - Started process (PID=2334) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:37.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:48:37.927+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:37.927+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:37.932+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:48:37.950+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:37.949+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:48:37.974+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:48:37.974+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-26 00:00:00+00:00, run_after=2024-03-27 00:00:00+00:00
+[2024-03-26T19:48:37.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.068 seconds
+[2024-03-26T19:49:08.454+0000] {processor.py:161} INFO - Started process (PID=2389) to work on /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:49:08.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/first-dag/quick_bash.py for tasks to queue
+[2024-03-26T19:49:08.457+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:49:08.457+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:49:08.465+0000] {processor.py:840} INFO - DAG(s) 'bash_demo' retrieved from /opt/airflow/dags/first-dag/quick_bash.py
+[2024-03-26T19:49:08.491+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:49:08.490+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-26T19:49:08.525+0000] {logging_mixin.py:188} INFO - [2024-03-26T19:49:08.525+0000] {dag.py:3834} INFO - Setting next_dagrun for bash_demo to 2024-03-26 00:00:00+00:00, run_after=2024-03-27 00:00:00+00:00
+[2024-03-26T19:49:08.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/first-dag/quick_bash.py took 0.100 seconds
