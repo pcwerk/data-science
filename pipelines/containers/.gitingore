@@ -1,4 +1,5 @@
-dags/*
-logs/*
-pluggins/*
+/logs
+/dags
+/plugins
 .env
+__pycache__
