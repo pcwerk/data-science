@@ -1,4 +1,4 @@
-Data Science Tool Kit.  This project is designed to help students to quickly get into data science.
+This project is designed to help students to quickly get into data science.  Before getting started, students should first clone this repository to their local computer.  As with all open learning and opensource platforms, pull requests are glad accepted.
 
 # Data-Science Tools
 
@@ -7,9 +7,11 @@ Data Science Tool Kit.  This project is designed to help students to quickly get
 Containers technology is a must-have toolset for data science.  The most popular (and probably the only) containers technology is `docker`.  To install docker:
 
 - Windows follow [this guide](https://docs.docker.com/desktop/install/windows-install/)
-- Linux follow [this guide](https://docs.docker.com/desktop/install/linux-install/) -- note that depending your Linux distribution, you will have to follow the specific instructions for Ubuntu, RedHat (Alma Linux), or Fedora.
+- Linux follow [this guide](https://docs.docker.com/desktop/install/linux-install/)
 
-In addition to docker, we recommend that you install [docker-compose](https://docs.docker.com/compose/install/).  Most of the project example code provided here will involve the `docker-compose`.  Again, follow the specific instruction for your platform.
+For Linux users, note that depending your distribution, you will have to follow the specific instructions for Ubuntu, RedHat (Alma Linux), or Fedora.  Generally speaking, Ubuntu is the most ready-to-use distribution.
+
+In addition to docker, we recommend that you install [docker-compose](https://docs.docker.com/compose/install/).  Most of the project example code provided here will involve `docker-compose`.  Again, follow the specific instruction for your platform.
 
 ## Airflow
 
@@ -38,11 +40,25 @@ Also, note that as part of the data acquisition stage, we really should consider
 
 ## Data Analysis
 
-### Statistical Analysis
+### Qantitative (Statistical) Analysis
 
-### Other Analytical Methods
+The use of stastistics to support your claim is the most clear and direct method for performing data analytics.  This involves collecting and interpreting data with numbers and graphs to identify patterns and trends.
+
+- Descriptive Statistics - breakdown and summarize data as given
+- Inferential Statistics - projection of small sampling into larger population
+
+For descriptive statistics, students should consider two baseline approaches:
+
+- Central computation 
+- Spread computation
+
+### Qualitative (Non-Statistical) Analysis
+
+A non-statistical approach involves generic information and uses text, sound and other forms of media to do so.  In otherwords, you can be somewhat creative.
 
 ## Data Visualization
+
+
 
 # Data-Science Education
 
