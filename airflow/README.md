@@ -1,8 +1,17 @@
 # Building a Data Pipeline
 
+The Apache Airflow is an opensource python project designed to help data scientist to quickly and efficienly build out data pipelines.  When working with `airflow` you have two options:
+
+1. Using native python within an [virtual environment](#using-python-virtual-environment-strategy) _or_
+2. Using [docker containers](#using-containers-strategy)
+
+This document describes both approaches.
+
 ## Using Python Virtual Environment Strategy
 
-We will operate the pipeline in a virtual environment:
+We will operate the pipeline in a virtual environment on Linux (or Mac). THe process for Windows will be slighly difference.
+
+First prepare the variables and location where the virtual environment will reside:
 
 ```
 export VIRTUAL_ENV=airflow.env
@@ -10,7 +19,7 @@ python3 -m venv $VIRTUAL_ENV
 source $VIRTUAL_ENV/bin/activate
 ```
 
-Install Airflow
+Next, install Airflow:
 
 ```
 export AIRFLOW=$(pwd)
@@ -21,7 +30,7 @@ export CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constrai
 pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
 ```
 
-Start up airflow in standalone (non-production) mode
+Finally, to start up airflow in standalone (non-production) mode
 
 ```
 airflow standalone
@@ -48,38 +57,34 @@ Note the username `admin` and the passowrd `5Q3cQKVvQMZVeWbT`.  This is needed t
 
 ## Using Containers Strategy
 
-Using the provided `docker-compose.yml` file to start up the containers
+The recommended approach is to use containers.  Using the provided `docker-compose.yml` file as a starting point. 
+
+First create the three folders `dags`, `plugins`, and `config`
 
 ```
 mkdir dags/ logs/ plugins/ config/
+```
+
+Next start up your airflow application
+
+```
 docker-compose up -d
 ```
 
-Let's create your first DAG
+Now point your browser to `http://localhost:8080` and you should see something similar to this
+
+![airflow](resources/airflow.png)
+
+
+
+## Working with the DAGS
+
+DAGS or direct acyclic graphs are essentially Airflow control files.  Datapipeless are described and executed in a DAG file.
+
+Let's create your first DAG:
 
 ```python
-#
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
-#
-#   http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-# KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
-"""
-### Tutorial Documentation
-Documentation that goes along with the Airflow tutorial located
-[here](https://airflow.apache.org/tutorial.html)
-"""
+
 from __future__ import annotations
 
 # [START tutorial]
@@ -94,7 +99,6 @@ from airflow.models.dag import DAG
 from airflow.operators.bash import BashOperator
 
 # [END import_module]
-
 
 # [START instantiate_dag]
 with DAG(
