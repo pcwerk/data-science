@@ -1,6 +1,6 @@
 # Building a Data Pipeline
 
-The Apache Airflow is an opensource python project designed to help data scientist to quickly and efficienly build out data pipelines.  When working with `airflow` you have two options:
+The Apache Airflow is an open source python project designed to help data scientist to quickly and efficiently build out data pipelines.  When working with `airflow` you have two options:
 
 1. Using native python within an [virtual environment](#using-python-virtual-environment-strategy) _or_
 2. Using [docker containers](#using-containers-strategy)
@@ -9,7 +9,7 @@ This document describes both approaches.
 
 ## Using Python Virtual Environment Strategy
 
-We will operate the pipeline in a virtual environment on Linux (or Mac). THe process for Windows will be slighly difference.
+We will operate the pipeline in a virtual environment on Linux (or Mac). THe process for Windows will be slightly different.
 
 First prepare the variables and location where the virtual environment will reside:
 
