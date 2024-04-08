@@ -63,6 +63,7 @@ First create the three folders `dags`, `plugins`, and `config`
 
 ```
 mkdir dags/ logs/ plugins/ config/
+chmod 777 dags logs pluggins config
 ```
 
 Next start up your airflow application
@@ -75,103 +76,59 @@ Now point your browser to `http://localhost:8080` and you should see something s
 
 ![airflow](resources/airflow.png)
 
+Note to view your containers activitities:
 
+```
+docker-compose logs -f
+```
+
+Are you should see something like this
+
+```
+airflow-init-1       | [2024-04-06T14:32:17.733+0000] {override.py:1769} INFO - Created Permission View: can read on View Menus
+airflow-init-1       | [2024-04-06T14:32:17.737+0000] {override.py:1820} INFO - Added Permission can read on View Menus to role Admin
+airflow-init-1       | [2024-04-06T14:32:17.746+0000] {override.py:1769} INFO - Created Permission View: menu access on Resources
+airflow-init-1       | [2024-04-06T14:32:17.749+0000] {override.py:1820} INFO - Added Permission menu access on Resources to role Admin
+airflow-init-1       | [2024-04-06T14:32:17.774+0000] {override.py:1769} INFO - Created Permission View: can read on Permission Views
+airflow-init-1       | [2024-04-06T14:32:17.778+0000] {override.py:1820} INFO - Added Permission can read on Permission Views to role Admin
+airflow-init-1       | [2024-04-06T14:32:17.788+0000] {override.py:1769} INFO - Created Permission View: menu access on Permission Pairs
+airflow-init-1       | [2024-04-06T14:32:17.792+0000] {override.py:1820} INFO - Added Permission menu access on Permission Pairs to role Admin
+airflow-init-1       | [2024-04-06T14:32:19.049+0000] {override.py:1458} INFO - Added user airflow
+airflow-init-1       | User "airflow" created with role "Admin"
+airflow-init-1       | 2.8.4
+```
 
 ## Working with the DAGS
 
-DAGS or direct acyclic graphs are essentially Airflow control files.  Datapipeless are described and executed in a DAG file.
+DAGS or direct acyclic graphs are essentially Airflow control files.  Data pipelines are written in python and follows a structure.  In the `bigdata` folder, there are two example DAGS.  Let's get started!
 
-Let's create your first DAG:
+### Bash Executor
+
+Let's take a look at the `bigdata/first_dag/bash_flow.py` file. There are currently three tasks: `t1`, `t2`, and `t3`.  Let's add it to the running instance of Airflow:
+
+```
+mkdir dags/first_dag
+cp bigdata/first_dag/bash_flow.py dags/first_dag/bash_flow.py
+```
+Enable the dag and run it.  Let us now add a fourth task:
 
 ```python
-
-from __future__ import annotations
-
-# [START tutorial]
-# [START import_module]
-import textwrap
-from datetime import datetime, timedelta
-
-# The DAG object; we'll need this to instantiate a DAG
-from airflow.models.dag import DAG
-
-# Operators; we need this to operate!
-from airflow.operators.bash import BashOperator
-
-# [END import_module]
-
-# [START instantiate_dag]
-with DAG(
-    "bash_demo",
-    # [START default_args]
-    # These args will get passed on to each operator
-    # You can override them on a per-task basis during operator initialization
-    default_args={
-        "depends_on_past": False,
-        "email": ["airflow@example.com"],
-        "email_on_failure": False,
-        "email_on_retry": False,
-        "retries": 1,
-        "retry_delay": timedelta(minutes=5),
-        # 'queue': 'bash_queue',
-        # 'pool': 'backfill',
-        # 'priority_weight': 10,
-        # 'end_date': datetime(2016, 1, 1),
-        # 'wait_for_downstream': False,
-        # 'sla': timedelta(hours=2),
-        # 'execution_timeout': timedelta(seconds=300),
-        # 'on_failure_callback': some_function, # or list of functions
-        # 'on_success_callback': some_other_function, # or list of functions
-        # 'on_retry_callback': another_function, # or list of functions
-        # 'sla_miss_callback': yet_another_function, # or list of functions
-        # 'trigger_rule': 'all_success'
-    },
-    # [END default_args]
-    description="A simple tutorial DAG",
-    schedule=timedelta(days=1),
-    start_date=datetime(2021, 1, 1),
-    catchup=False,
-    tags=["example"],
-) as dag:
-    # [END instantiate_dag]
-
-    # t1, t2 and t3 are examples of tasks created by instantiating operators
-    # [START basic_task]
-    t1 = BashOperator(
-        task_id="print_date",
+    t4 = BashOperator(
+        task_id="print_date_again",
         bash_command="date",
     )
-
-    t2 = BashOperator(
-        task_id="sleep",
-        depends_on_past=False,
-        bash_command="sleep 5",
-        retries=3,
-    )
-
-    # [END basic_task]
-
-    # [START jinja_template]
-    templated_command = textwrap.dedent(
-        """
-    {% for i in range(5) %}
-        echo "{{ ds }}"
-        echo "{{ macros.ds_add(ds, 7)}}"
-    {% endfor %}
-    """
-    )
-
-    t3 = BashOperator(
-        task_id="templated",
-        depends_on_past=False,
-        bash_command=templated_command,
-    )
-    # [END jinja_template]
-
-    t1 >> [t2, t3]
-# [END tutorial]
 ```
 
-Put this file into `dags/first_dag/bash_flow.py`
+Don't forget to also add in the flow assignment
 
-Now you should be able to enable and run the workflow through the GUI.
+```python
+    t1 >> [t2, t3] >> t4
+```    
+
+### Python Executor
+
+For a python executor (or running python code), you should do something similar by copying `bigdata/second_dag/python_flow.py` to the `dags/second_dag` folder.
+
+The example provided is rather simplistic. However, you can copy your entire data acquisition code base into the same DAG folder.
+
+
