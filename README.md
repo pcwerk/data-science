@@ -125,10 +125,8 @@ The recommended approach is to use containers.  Using the provided `docker-compo
 First create the three folders `dags`, `plugins`, `config`, and `storage`
 
 ```
-mkdir data
-cd data
 mkdir dags/ logs/ plugins/ config/ storage/
-chmod 777 dags logs plugins config
+chmod 777 dags logs plugins config storage
 ```
 
 Next start up your airflow application
