@@ -1,7 +1,0 @@
-*.env
-/logs
-/dags
-/plugins
-/storage
-.env
-__pycache__
